@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Video() {
+  const [video, setVideo] = useState(
+    "https://www.youtube.com/embed/EtNY9inEPOg?list=RDEtNY9inEPOg"
+  );
   return (
     <div className="p-4">
       <div className="  flex justify-center items-center">
         <iframe
           className="w-full h-[500px] rounded-lg"
-          src="https://www.youtube.com/embed/EtNY9inEPOg?list=RDEtNY9inEPOg"
+          src={video}
           title="MARON feat. KOTOKO「電波的妄想美少女Q」 - ゆんゆん電波シンドローム主題歌"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -15,7 +18,7 @@ function Video() {
         ></iframe>
       </div>
       <div>
-        <h1 className="font-bold text-[21px] my-2">
+        <h1 className="font-bold text-[21px] my-1">
           MARON feat. KOTOKO「電波的妄想美少女Q」 -
           ゆんゆん電波シンドローム主題歌
         </h1>
@@ -28,7 +31,7 @@ function Video() {
             />
             <div>
               <p className="font-bold">まろん（IOSYS）</p>
-              <p>44.9K subscribers</p>
+              <p className="text-gray-400 text-[12px]">44.9K subscribers</p>
             </div>
             <button className="bg-black rounded-full text-white px-4 py-1 font-medium">
               Subscribe
@@ -44,11 +47,11 @@ function Video() {
             </button>
             <button className="flex bg-gray-200 rounded-full px-3 py-1 mx-4 space-x-1">
               <img src="src/assets/elements/share.svg" alt="" />
-              <span>Share</span>
+              <span className="font-medium">Share</span>
             </button>
             <button className="flex bg-gray-200 rounded-full px-3 py-1 space-x-1">
               <img src="src/assets/elements/downloadbt.svg" alt="" />
-              <span>Download</span>
+              <span className="font-medium">Download</span>
             </button>
             <button className="flex bg-gray-200 rounded-full px-3 py-1 mx-4 space-x-1">
               <img src="src/assets/elements/clip.svg" alt="" />
@@ -68,7 +71,7 @@ function Video() {
           </h1>
           <div className="px-2 w-[35%] text-sm">
             ゲーム「ゆんゆん電波シンドローム」主題歌 『電波的妄想美少女Q
-            (feat.KOTOKO)』 各種音楽配信サイトにて配信中！！...more
+            (feat.KOTOKO)』 各種音楽配信サイトにて配信中！！...<b>more</b>
           </div>
         </div>
       </div>

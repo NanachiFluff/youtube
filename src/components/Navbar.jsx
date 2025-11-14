@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className="h-[50px] bg-white flex justify-between items-center px-5 shadow-md">
+    <div className="h-[50px] bg-white flex justify-between items-center px-5">
       <div className="flex space-x-5">
         <img className="h-7" src="src/assets/elements/bar.svg" alt="" />
         <img className="h-7" src="src/assets/elements/ytlogo.svg" alt="" />
